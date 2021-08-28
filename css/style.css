@@ -263,7 +263,7 @@
   font-weight: 500;
 }
 .disclaimer {
-  font-size: 12px;
+  font-size: 12px !important;
   opacity: 0.7;
 }
 .artwork-details-form {
@@ -275,6 +275,7 @@
 }
 .suggest-tag-list span {
   padding: 8px 15px;
+  margin-bottom: 8px;
   background: #f1f1f1;
   margin-right: 5px;
   display: inline-block;
@@ -282,4 +283,104 @@
 }
 .publish-artwork {
   padding: 10px 120px;
+}
+
+/* Responsive Css */
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+  .search-filter-wrap {
+    gap: 10px;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .search-filter-wrap .form-inline {
+    width: 95%;
+  }
+  .search-filter-wrap .filter {
+    width: 95%;
+  }
+  .add-artwork-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .require-type ul {
+    gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .margin-title-sm {
+    margin-top: 30px;
+  }
+  .upload-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .agreement-box h5.title {
+    font-size: 1.15rem;
+    margin-top: 15px;
+    font-weight: 700;
+  }
+  .disclaimer {
+    margin-top: 18px;
+  }
+  .btn {
+    padding: 0.375rem 0.5rem;
+  }
+  .publish-artwork {
+    padding: 10px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .add-artwork-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  .single-artwork {
+    height: 170px;
+    font-size: 75px;
+  }
+  .single-artwork .icon {
+    height: 120px;
+    width: 120px;
+  }
+  .margin-title-sm {
+    margin-top: 30px;
+  }
+  .upload-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 20px 20px 20px;
+  }
+  .agreement-box h5.title {
+    margin-top: 20px;
+  }
+  .radio-mature-wrap p.disclaimer {
+    margin-top: 20px;
+  }
+  .publish-artwork {
+    padding: 10px 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .add-artwork-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .require-type ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .upload-container {
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 485px;
+  }
+  .publish-artwork {
+    padding: 10px 40px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
